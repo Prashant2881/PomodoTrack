@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PomodoTrack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="pomodoro-section">
+      <h1>PomodoTrack</h1>
+      <div class="timer">
+        <span id="hours">00</span>:<span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+      <div class="time-input">
+        <label for="hoursInput">Hours:</label>
+        <input type="number" id="hoursInput" min="0" max="23" value="0">
+        <label for="minutesInput">Minutes:</label>
+        <input type="number" id="minutesInput" min="0" max="59" value="25">
+        <button id="setTimer">Set Timer</button>
+      </div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="progress-tracker">
+        <h2>Progress Tracker</h2>
+        <p>Completed Tasks: <span id="completedTasksCount">0</span> / <span id="totalTasksCount">0</span></p>
+        <p>Task Completion Progress: <span id="completionPercentage">0%</span></p>
+        <div class="progress-bar-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+      
+      </div>
+      
+    <div class="todo-section">
+        <h2>To-Do List</h2>
+        <div class="todo-input">
+          <input type="text" id="todoInput" placeholder="Add a new task">
+          <button id="addTask">Add</button>
+        </div>
+        <ul id="todoList">
+          
+        </ul>
+      </div>
+   
+    </div>
+
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
